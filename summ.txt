@@ -1,4 +1,5 @@
 a=int(input("enter a number"))
 b=int(input("enter b number"))
-c=int(input("enter cnumber"))
+c=int(input("enter c number"))
 print("addition is",a+b+c)
+print("MULTIPLICATION IS", a*b)
