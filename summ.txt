@@ -5,3 +5,5 @@ print("addition is",a+b+c)
 print("MULTIPLICATION IS", a*b)
 print("SUB IS", a-b)
 print("Division is",a/b)
+print("sqr is",a**2)
+
