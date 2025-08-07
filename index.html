@@ -1,26 +1,37 @@
-<DOCTYPE html>
-<html>
-    <head>
-        <title>
-           Aditya-APP
-        </title>
-    </head>
-    <body>
-    <div style="height:600px;width:900px;background:blue;margin:0auto">
-        <div style="height:600px;width:200px;background:black;float:left">
-            <h1 style="color: white">TITLE-Page</h1>
-            <h2>YouTube Home Page</h2>
-            <h3>Created by team Aditya</h3>
-        </div>
-
-        <div style="height:600px;width:200px;background:lightpink;float:right">
-            <h1><Center>WELCOME-PAGE</Center></h1>
-                <div style="height:600px;width:200px;background:lightgrey;float:inline-start;"></div>
-        </div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Bill Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Restaurant Bill Management</h1>
+    
+    <div class="input-section">
+      <input type="text" id="item" placeholder="Item name" />
+      <input type="number" id="qty" placeholder="Quantity" />
+      <input type="number" id="price" placeholder="Price per item" />
+      <button onclick="addItem()">Add Item</button>
     </div>
-    </body>
+
+    <table id="bill-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="bill-body"></tbody>
+    </table>
+
+    <h2 id="total">Total: ₹0</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
-
-
-
